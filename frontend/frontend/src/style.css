@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap');
+:root{font-family:'DM Sans',sans-serif;color:#202637;background:#f5f7fb;font-synthesis:none;text-rendering:optimizeLegibility}
+*{box-sizing:border-box}
+body{margin:0;min-width:320px}
+button,input,select{font:inherit}
+button{cursor:pointer}
+.app-shell{max-width:1180px;margin:0 auto;padding:0 28px 32px}
+.topbar{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #e6eaf1}
+.brand{display:flex;align-items:center;gap:10px;font-family:Manrope,sans-serif;font-weight:800;font-size:21px;letter-spacing:-.5px}
+.brand-icon{display:grid;place-items:center;width:34px;height:34px;background:#5368e8;color:white;border-radius:10px;font-size:19px}
+.topbar-label{color:#788196;font-size:13px}
+.hero{margin:34px 0 24px;padding:34px 38px;border-radius:22px;background:linear-gradient(120deg,#202a53,#394d9c 70%,#5a70df);color:white;display:flex;justify-content:space-between;align-items:center;overflow:hidden}
+.eyebrow{font-size:11px;font-weight:700;letter-spacing:1.5px;color:#8c98b3;margin:0 0 9px}
+.hero .eyebrow{color:#bfcaff}
+h1,h2,h3,p{margin-top:0}
+h1{font:800 clamp(27px,4vw,38px) Manrope,sans-serif;letter-spacing:-1px;margin-bottom:10px}
+h1 span{color:#c9d2ff}
+.hero-sub{color:#d7def8;margin:0;font-size:14px}
+.hero-mark{font-size:104px;color:#9eafff;opacity:.45;transform:rotate(12deg);margin-right:18px}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-bottom:22px}
+.stat-card{padding:19px 21px;background:white;border:1px solid #e8ebf2;border-radius:16px;box-shadow:0 4px 18px #26355c06}
+.stat-top{display:flex;align-items:center;justify-content:space-between;color:#798197;font-size:13px}
+.stat-icon{width:30px;height:30px;display:grid;place-items:center;background:#f0f2ff;color:#5a6de1;border-radius:9px;font-size:15px}
+.stat-card strong{display:block;font:800 27px Manrope,sans-serif;margin-top:10px}
+.content-grid{display:grid;grid-template-columns:330px 1fr;gap:20px;align-items:start}
+.form-panel,.tasks-panel{background:white;border:1px solid #e8ebf2;border-radius:18px;padding:23px;box-shadow:0 4px 18px #26355c06}
+.panel-heading{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}
+.panel-heading h2{font:700 21px Manrope,sans-serif;margin:0}
+.panel-symbol{display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:#edf0ff;color:#586ce2;font-size:22px}
+form label{display:block;font-size:12px;font-weight:700;color:#515a70;margin-bottom:15px}
+form input,form select{display:block;margin-top:7px;width:100%;height:43px;border:1px solid #e1e5ee;border-radius:10px;padding:0 12px;background:#fff;color:#2b3347;outline:none;font-size:13px}
+form input:focus,form select:focus{border-color:#7585ed;box-shadow:0 0 0 3px #7585ed19}
+.form-actions{display:flex;gap:9px}
+.primary-btn{background:#566be5;color:white;border:0;border-radius:10px;padding:12px 15px;font-weight:700;font-size:13px;flex:1;box-shadow:0 5px 12px #566be52b}
+.primary-btn span{float:right}
+.cancel-btn{border:1px solid #e4e7ef;background:white;border-radius:10px;padding:0 13px;color:#697289}
+.count-pill{background:#f0f2ff;color:#5d6cdb;border-radius:30px;padding:7px 10px;font-size:12px;font-weight:700}
+.toolbar{display:flex;justify-content:space-between;gap:12px;margin-bottom:17px;align-items:center}
+.search-wrap{display:flex;align-items:center;border:1px solid #e6e9f0;border-radius:10px;padding:0 10px;min-width:160px;flex:1;color:#98a0b2}
+.search-wrap input{border:0;outline:none;height:38px;width:100%;padding-left:8px;font-size:12px}
+.filter-tabs{display:flex;gap:3px;background:#f3f5f9;border-radius:10px;padding:4px}
+.filter-tabs button{border:0;background:transparent;border-radius:8px;padding:7px 10px;font-size:11px;color:#788197}
+.filter-tabs button.active{background:white;color:#4f63d6;font-weight:700;box-shadow:0 2px 5px #1823420b}
+.task-list{display:grid;gap:10px}
+.task-card{display:flex;align-items:flex-start;gap:12px;border:1px solid #e9ecf3;border-radius:13px;padding:14px 13px}
+.check-btn{width:21px;height:21px;flex:0 0 21px;border:1.5px solid #d7dce7;border-radius:7px;background:white;color:white;font-size:13px;margin-top:1px}
+.check-btn.checked{background:#5e72e6;border-color:#5e72e6}
+.task-info{flex:1;min-width:0}
+.task-info h3{font-size:14px;font-weight:700;margin:0 0 5px;overflow-wrap:anywhere}
+.task-info p{font-size:11px;color:#8991a4;margin:0 0 9px}
+.dot{padding:0 4px;color:#c3c8d3}
+.task-tags{display:flex;gap:6px;flex-wrap:wrap}
+.priority,.done-tag{border-radius:20px;padding:4px 8px;font-size:10px;font-weight:700}
+.priority.low{background:#e9f8f0;color:#39865d}.priority.medium{background:#fff4dd;color:#a77722}.priority.high{background:#ffeded;color:#c45454}
+.done-tag{background:#eef1ff;color:#5c6dd8}
+.is-complete h3{text-decoration:line-through;color:#8a91a2}
+.task-actions{display:flex;gap:3px}
+.task-actions button{border:0;background:transparent;color:#8b94a7;font-size:17px;padding:2px 5px}
+.task-actions button:hover{color:#5267de}
+.empty-state{text-align:center;padding:42px 15px;color:#8891a4;font-size:13px}
+.empty-state strong{display:block;color:#535c72;margin-bottom:6px}
+.empty-state p{margin:0;font-size:12px}
+.empty-icon{font-size:27px;color:#b5bfd5;margin-bottom:10px}
+.error-box{background:#fff0f0;color:#b64e4e;padding:10px 12px;border-radius:9px;font-size:12px;margin-bottom:12px}
+footer{text-align:center;color:#9aa2b2;font-size:12px;padding:28px 0 8px}
+footer span{padding:0 6px}
+@media(max-width:850px){.content-grid{grid-template-columns:1fr}.stats-grid{grid-template-columns:repeat(2,1fr)}.hero-mark{font-size:75px}}
+@media(max-width:560px){.app-shell{padding:0 15px 25px}.topbar{height:64px}.hero{padding:26px 22px;margin-top:23px}.hero-mark{display:none}.stats-grid{gap:10px}.stat-card{padding:15px}.form-panel,.tasks-panel{padding:17px}.toolbar{flex-direction:column;align-items:stretch}.filter-tabs{justify-content:center}.filter-tabs button{flex:1}.task-card{gap:9px}}
